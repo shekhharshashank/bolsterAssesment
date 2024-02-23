@@ -15,6 +15,7 @@ describe('Create new user',()=>{
         createUser(payload).then((response)=>{
             expect(response.status).to.eq(201); 
             expect(response.body.name).to.eq(payload.name);
+            expect(response.body.job).to.eq(payload.job);
             cy.logger('apitest','New user is created');
            
         })
@@ -25,6 +26,7 @@ describe('Create new user',()=>{
         createEmptyUser().then((response)=>{
             expect(response.status).to.eq(201); 
             expect(response.body.name).to.not.exist
+            expect(response.body.job).to.not.exist
             cy.logger('apitest','Empty user is created');
            
         })
@@ -35,8 +37,9 @@ describe('Create new user',()=>{
         payload.name=""
         createUser(payload).then((response)=>{
             expect(response.status).to.eq(201); 
-            expect(response.body.name).to.eq(payload.name);
             cy.logger('apitest',payload.name);
+            expect(response.body.name).to.eq(payload.name);
+            expect(response.body.job).to.eq(payload.job);
             cy.logger('apitest',payload.name +'Empty user is created');
            
         })
@@ -44,10 +47,12 @@ describe('Create new user',()=>{
 
     it('Validate Empty user is created with empty Job',()=>{
 
+        payload.job=""
         createUser(payload).then((response)=>{
             expect(response.status).to.eq(201); 
             expect(response.body.name).to.eq(payload.name);
-            cy.logger('apitest','New user is created');
+            expect(response.body.job).to.eq(payload.job);
+            cy.logger('apitest','New user is created with empty Job');
            
         })
     })

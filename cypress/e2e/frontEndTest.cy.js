@@ -1,2 +1,2 @@
-import "./TestExceptionsPage.cy"
-import "./TestLoginPage.cy"
+import './TestExceptionsPage.cy'
+import './TestLoginPage.cy'

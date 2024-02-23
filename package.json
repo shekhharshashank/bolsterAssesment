@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run",
     "frontEndTest": "cypress run --spec 'cypress/e2e/frontEndTest.cy.js'",
-    "backEndTest":"cypress run --spec 'cypress/e2e/apiTest/backendTest.cy.js'"
+    "backEndTest": "cypress run --spec 'cypress/e2e/apiTest/backendTest.cy.js'"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/shekhharshashank/bolsterAssesment#readme",
   "dependencies": {
+    "chai-json-schema": "^1.5.1",
     "cypress": "^13.6.5"
   },
   "devDependencies": {
