@@ -34,4 +34,15 @@ function createUser(payload) {
         return response;
       })
 }
-  module.exports = {createUser,createEmptyUser,getUsers}
+
+function getUser(id)
+{
+    return  cy.request({
+        method: 'GET',
+        url: `${apiConfig.baseUrl}${apiConfig.endpoints.users}/${id}`,
+        failOnStatusCode: false, 
+      }).then((response) => {
+        return response;
+      })
+}
+  module.exports = {createUser,createEmptyUser,getUsers,getUser}
