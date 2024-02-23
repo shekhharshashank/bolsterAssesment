@@ -1,0 +1,7 @@
+{
+    "HomePage":{
+
+        "testLoginPageBtn":"a[href$='practice-test-login/']",
+        "testExceptionPageBtn":"a[href$='practice-test-exceptions/']"
+    }
+}

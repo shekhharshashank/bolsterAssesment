@@ -1,0 +1,8 @@
+{
+    "baseUrl": "https://reqres.in",
+    "endpoints": {
+      "users": "/api/users",
+      "login": "/api/login",
+      "register":"/api/register"
+    }
+  }

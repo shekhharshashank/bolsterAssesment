@@ -1,0 +1,12 @@
+{"ExceptionsPage":{
+
+"editBtn":"button#edit_btn",
+"addBtn":"button#add_btn",
+"saveBtn":"button#save_btn",
+"inputtextRow2":"#row2 input.input-field",
+"removeBtn":"button#remove_btn",
+"saveConfirmation":"#confirmation",
+"inputtextRow1":"#row1 input.input-field",
+"instructionMsg":"p#instructions"
+
+}}

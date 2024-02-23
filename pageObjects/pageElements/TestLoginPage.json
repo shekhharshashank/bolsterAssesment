@@ -1,0 +1,10 @@
+{"Login":{
+
+    "userName":"input#username",
+    "password":"input#password",
+    "submitBtn":"button#submit",
+    "loginHeader":"#login h2",
+    "loginError":"div#error",
+    "userNameValue":"li:nth-child(2) > b:nth-child(2)",
+    "passwordValue":"li:nth-child(2) > b:nth-child(4)"
+}}

@@ -1,0 +1,27 @@
+{
+  "name": "bolsterassesment",
+  "version": "1.0.0",
+  "description": "Assessment Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "frontEndTest": "cypress run --spec 'cypress/e2e/frontEndTest.cy.js'",
+    "backEndTest":"cypress run --spec 'cypress/e2e/apiTest/backendTest.cy.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shekhharshashank/bolsterAssesment.git"
+  },
+  "author": "Shashank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shekhharshashank/bolsterAssesment/issues"
+  },
+  "homepage": "https://github.com/shekhharshashank/bolsterAssesment#readme",
+  "dependencies": {
+    "cypress": "^13.6.5"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
